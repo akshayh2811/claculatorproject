@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    
+   <div class="box"style="border:1px solid black">
+    <input type="text" class="subinput" id="equation" readonly><br>
+    <input type="text" class="input" id="input" value="0"><br><br>
+    <div><button class="a" onclick="removeLastVal('')"> d </button><button class="a" onclick="clearAll()"> c </button><button class="a" onclick="getVal()"> h </button><button class="a" onclick="getVal('/')"> ÷ </button></br></div>
+    <div><button class="a" onclick="getVal('7')"> 7 </button><button class="a" onclick="getVal('8')"> 8 </button><button class="a" onclick="getVal('9')"> 9 </button><button class="a"  onclick="getVal('*')"> * </button></br></div>
+    <div><button class="a" onclick="getVal('4')"> 4 </button><button class="a" onclick="getVal('5')"> 5 </button><button class="a" onclick="getVal('6')"> 6 </button><button class="a"  onclick="getVal('-')"> – </button></br></div>
+    <div><button class="a" onclick="getVal('1')"> 1 </button><button class="a" onclick="getVal('2')"> 2 </button><button class="a" onclick="getVal('3')"> 3 </button><button class="a"  onclick="getVal('+')"> + </button></br></div>
+    <div class="b"><button class="a" onclick="getVal('%')"> % </button><button class="a" onclick="getVal('0')"> 0 </button><button class="a" onclick="getVal('•')"> • </button><button class="a"  onclick="solve()"> = </button></br></div>
+   </div>
+
+   <div  class="history">
+    <h3>History</h3>
+    <div id="history">
+        <!-- <div class="his">
+            <p>7-2 =</p>
+            <p>5</p>
+        </div> -->
+    </div>
+    <button onclick="clearHistory()">Delete history</button>
+</div>
+
+
+
+        <script src="abc.js"></script>
+
+</body>
+</html>
+
+
